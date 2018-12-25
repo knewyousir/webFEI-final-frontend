@@ -1,0 +1,156 @@
+.content {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    box-sizing: border-box;
+    background-color: rosybrown;
+    height: 100%;
+    width: 100%;
+    .sidebar {
+        grid-area: 1 / 1 / 6 / 2;
+        box-sizing: border-box;
+        padding: 2px 2px 2px 2px;
+        margin: 2px 2px 2px 2px;
+        border: 1px solid black;
+        overflow: hidden;
+        background-color: lightgoldenrodyellow;
+        .sidebarHeader {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 1px 1px 1px 1px;
+            padding: 1px 1px 1px 1px;
+            border: 1px solid black;
+            background-color: lightcyan;
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: 75%;
+            h2:first-child {
+                box-sizing: border-box;
+                margin: 1px 1px 1px 1px;
+                padding: 1px 1px 1px 1px;
+                border: 1px hidden black;
+                display: inline-block;
+            }
+            h2:nth-child(2) {
+                box-sizing: border-box;
+                margin: 1px 1px 1px 1px;
+                padding: 1px 1px 1px 1px;
+                border: 1px solid black;
+                background-color: honeydew;
+                display: inline-block;
+            }
+        }
+        .sidebarList {
+            width: calc(100% + 15px);
+            height: 100%;
+            overflow-y: scroll;
+            padding-right: 17px;
+            box-sizing: content-box;
+            ul{
+                li {
+                    box-sizing: border-box;
+                    margin: 1px 1px 1px 1px;
+                    padding: 1px 1px 1px 1px;
+                    border: 1px solid black;
+                    background-color: lightcyan;
+                    display: inline-block;
+                    width: calc(100% - 2px);
+                    p{
+                        text-align: center;
+                        font-size: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .body {
+        grid-area: 1 / 2 / 6 / 6;
+        box-sizing: border-box;
+        padding: 2px 2px 2px 2px;
+        margin: 2px 2px 2px 2px;
+        border: 1px solid black;
+        background-color: lightgoldenrodyellow;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        .bodyHeader {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .bodyHeaderLeft{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                h2:first-child{
+                    overflow-wrap: break-word;
+                }
+                h2:nth-child(2){
+                    overflow-wrap: break-word;
+                }
+                .date{
+                    font-style: italic;
+                }
+            }
+            .bodyHeaderRight {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                h2:first-child{
+                    box-sizing: border-box;
+                    margin: 1px 1px 1px 1px;
+                    padding: 1px 1px 1px 1px;
+                    border: 1px solid black;
+                    background-color: lightblue;
+                    display: inline-block;
+                }
+                button:nth-child(2){
+                    box-sizing: border-box;
+                    margin: 1px 1px 1px 1px;
+                    padding: 1px 1px 1px 1px;
+                    border: 1px solid black;
+                    background-color: lightpink;
+                    display: inline-block;
+                }
+            }
+        }
+        .bodyText{
+            font-size: 80%;
+        }
+        .bodyForm{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            width: 100%;
+            .formHeader{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-grow: 1;
+                box-sizing: border-box;
+                padding: 1px 1px 1px 1px;
+                input{
+                    width: calc(80%);
+                }
+                button{
+                    box-sizing: border-box;
+                    min-width: auto;
+                    min-height: auto;
+                    width: calc(20%);
+                    border-radius: 0px;
+                }
+            }
+            .formBody{
+                padding: 1px 1px 1px 1px;
+                height: calc(94% - 8px);
+                min-height: auto;
+                flex-grow: 1;
+                textarea{
+                    display: block;
+                    width: calc(100% - 6px);
+                    height: calc(100% - 6px);
+                }
+            }
+        }
+    }
+}

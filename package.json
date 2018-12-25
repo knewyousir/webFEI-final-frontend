@@ -1,0 +1,24 @@
+{
+  "name": "webfei-final-frontend",
+  "version": "1.0.0",
+  "description": "final project for webFEI",
+  "main": "/app/index.html",
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "knewyousir",
+  "license": "ISC",
+  "dependencies": {
+    "re-base": "^2.2.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "^2.1.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
